@@ -1,0 +1,39 @@
+.elements {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 5%;
+  justify-content: space-between;
+  gap: 5%;
+}
+.elements__cards {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #ffffff;
+  border: none;
+  border-radius: 10px;
+}
+.elements__img {
+  width: 282px;
+  height: 282px;
+  border-radius: 10px 10px 0px 0px;
+}
+.elements__close {
+}
+.elements__title {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29.05px;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.elements__favorite {
+  max-width: 21px;
+  max-height: 19px;
+  cursor: pointer;
+}

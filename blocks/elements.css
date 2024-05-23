@@ -1,10 +1,11 @@
 .elements {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 5%;
+  padding-top: 2%;
   justify-content: space-between;
-  gap: 5%;
+  gap: 3%;
   margin: auto;
+  max-width: 880px;
 }
 .elements__cards {
   display: flex;
@@ -14,6 +15,8 @@
   background: #ffffff;
   border: none;
   border-radius: 10px;
+  width: 282px;
+  height: 350px;
 }
 .elements__img {
   width: 282px;
@@ -39,21 +42,17 @@
   cursor: pointer;
 }
 @media screen and (max-width: 768px) {
-  .elements__cards {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    overflow: hidden;
-    background: #ffffff;
-    border: none;
-    border-radius: 10px;
-  }
-  .elements__img {
-    max-width: 282px;
+  .elements {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 10%;
   }
 }
 @media screen and (max-width: 320px) {
   .elements {
-    display: block;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    gap: 1%;
+    margin-bottom: 30%;
   }
 }

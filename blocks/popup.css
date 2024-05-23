@@ -57,3 +57,15 @@
 .form__button:hover {
   background: #000000cc;
 }
+@media screen and (max-width: 320px) {
+  .popup__form {
+    width: 250px;
+    height: 330px;
+  }
+  .form__input {
+    width: 220px;
+  }
+  .form__button {
+    width: 220px;
+  }
+}

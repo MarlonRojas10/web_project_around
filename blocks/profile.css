@@ -15,6 +15,9 @@
   text-align: left;
   margin: 0;
 }
+.profile__info {
+  display: flex;
+}
 .profile__job {
   font-family: Inter;
   font-size: 18px;
@@ -38,4 +41,13 @@
   border-radius: 2px 0px 0px 0px;
   align-self: center;
   cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+  .profile {
+    display: block;
+  }
+  .elements {
+    display: block;
+  }
 }

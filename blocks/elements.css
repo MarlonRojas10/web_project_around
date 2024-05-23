@@ -5,13 +5,11 @@
   justify-content: space-between;
   gap: 5%;
   margin: auto;
-  max-width: 900px;
 }
 .elements__cards {
   display: flex;
   flex-direction: column;
   margin: auto;
-  border-radius: 6px;
   overflow: hidden;
   background: #ffffff;
   border: none;
@@ -39,4 +37,23 @@
   max-width: 21px;
   max-height: 19px;
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .elements__cards {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    overflow: hidden;
+    background: #ffffff;
+    border: none;
+    border-radius: 10px;
+  }
+  .elements__img {
+    max-width: 282px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .elements {
+    display: block;
+  }
 }

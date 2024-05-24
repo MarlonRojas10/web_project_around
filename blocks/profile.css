@@ -1,8 +1,14 @@
 .profile {
   display: grid;
+  padding-top: 2%;
   grid-template-columns: 1fr 4fr 1fr;
   max-width: 900px;
   margin: auto;
+}
+.profile__info {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .profile__imagen {
   max-width: 168.75px;
@@ -17,7 +23,7 @@
   text-align: left;
   margin: 0;
 }
-.profile__info {
+.profile__content {
   display: flex;
 }
 .profile__job {
@@ -32,8 +38,8 @@
 .profile__button {
   max-width: 24px;
   max-height: 24px;
-  border: 1px 0px 0px 0px;
-  opacity: 0px;
+  position: relative;
+  top: 15px;
   cursor: pointer;
 }
 .profile__add {
@@ -47,7 +53,8 @@
 
 @media screen and (max-width: 320px) {
   .profile {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   .elements {
     display: block;

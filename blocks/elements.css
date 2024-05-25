@@ -17,14 +17,11 @@
   border-radius: 10px;
   width: 282px;
   height: 350px;
-  overflow: hidden;
 }
 .elements__img {
   width: 282px;
   height: 282px;
   border-radius: 10px 10px 0px 0px;
-}
-.elements__close {
 }
 .elements__title {
   font-family: Inter;

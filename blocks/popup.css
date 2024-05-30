@@ -57,8 +57,37 @@
 .form__button:hover {
   background: #000000cc;
 }
+.popup__content {
+  position: relative;
+  max-width: 700px;
+  max-height: 540px;
+  display: flex;
+}
+.popup__image {
+  width: 100%;
+}
+.popup__title {
+  position: absolute;
+  bottom: -40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .popup__content {
+    width: 500px;
+    height: 400px;
+  }
+}
 @media screen and (max-width: 320px) {
   .popup__form {
+    width: 250px;
+    height: 330px;
+  }
+  .popup__content {
     width: 250px;
     height: 330px;
   }

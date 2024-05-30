@@ -72,98 +72,65 @@
           </button>
         </form>
       </div>
-      <section class="elements">
-        <div class="elements__cards">
+      <section class="elements"></section>
+      <div class="popup" id="popup-place">
+        <form class="form popup__form" id="add-card" novalidate>
           <img
-            src="./images/image__elements1.png"
-            class="elements__img"
-            alt="imagen-paisaje"
+            src="/images/image__popup.png"
+            class="form__close-button"
+            alt="buton-close"
+            id="close-place-form"
           />
-          <h2 class="elements__title">
-            Valle de Yosemite
-            <img
-              src="./images/img__favorite.png"
-              class="elements__favorite"
-              alt=""
-            />
-          </h2>
-        </div>
-        <div class="elements__cards">
+          <h2 class="form__title">Nuevo Lugar</h2>
+          <input
+            class="form__input"
+            type="text"
+            id="input-nameLugar"
+            placeholder="Titulo"
+            required
+            minlength="2"
+            maxlength="40"
+          />
+          <span class="input-error input-name-error"></span>
+          <input
+            class="form__input"
+            type="text"
+            id="input-enlace"
+            placeholder="Enlace de la imagen"
+            required
+            minlength="2"
+            maxlength="200"
+          />
+          <span class="input-error input-about-error"></span>
+          <button class="form__button" type="submit" id="place-form-button">
+            Save
+          </button>
+        </form>
+      </div>
+      <div class="popup" id="popup-image">
+        <div class="popup__content" id="view-image">
           <img
-            src="./images/image__elements2.png"
-            class="elements__img"
-            alt="imagen-paisaje"
+            src="/images/image__popup.png"
+            class="form__close-button"
+            alt="buton-close"
+            id="close-image-form"
           />
-          <h2 class="elements__title">
-            Lago Louise
-            <img
-              src="./images/img__favorite.png"
-              class="elements__favorite"
-              alt=""
-            />
-          </h2>
+          <img src="" class="popup__image" alt="imagen-paisaje" />
+          <h2 class="popup__title"></h2>
         </div>
-        <div class="elements__cards">
-          <img
-            src="./images/image__elements3.png"
-            class="elements__img"
-            alt="imagen-paisaje"
-          />
-          <h2 class="elements__title">
-            Montañas Calvas
-            <img
-              src="./images/img__favorite.png"
-              class="elements__favorite"
-              alt=""
-            />
-          </h2>
+      </div>
+
+      <template class="template-card">
+        <div class="element">
+          <button class="element__photo-trash"></button>
+          <img class="element__img" src="" alt="" />
+          <div class="element__info">
+            <h2 class="element__title"></h2>
+            <button class="element__favorite"></button>
+          </div>
         </div>
-        <div class="elements__cards">
-          <img
-            src="./images/image__elements4.jpg"
-            class="elements__img"
-            alt="imagen-paisaje"
-          />
-          <h2 class="elements__title">
-            Latemar
-            <img
-              src="./images/img__favorite.png"
-              class="elements__favorite"
-              alt=""
-            />
-          </h2>
-        </div>
-        <div class="elements__cards">
-          <img
-            src="./images/image__elements5.jpg"
-            class="elements__img"
-            alt="imagen-paisaje"
-          />
-          <h2 class="elements__title">
-            Vanois National
-            <img
-              src="./images/img__favorite.png"
-              class="elements__favorite"
-              alt=""
-            />
-          </h2>
-        </div>
-        <div class="elements__cards">
-          <img
-            src="./images/image__elements6.jpg"
-            class="elements__img"
-            alt="imagen-paisaje"
-          />
-          <h2 class="elements__title">
-            Lago di Braies
-            <img
-              src="./images/img__favorite.png"
-              class="elements__favorite"
-              alt=""
-            />
-          </h2>
-        </div>
-      </section>
+      </template>
+
       <footer class="footer">
         <p class="footer__copyright">&copy; 2024,Marlon Rojas</p>
       </footer>

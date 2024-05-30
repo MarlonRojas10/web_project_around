@@ -5,39 +5,77 @@
   justify-content: space-between;
   gap: 3%;
   margin: auto;
-  max-width: 880px;
+  max-width: 882px;
 }
-.elements__cards {
+.element {
   display: flex;
   flex-direction: column;
   margin: auto;
   overflow: hidden;
-  background: #ffffff;
+  background-color: white;
   border: none;
   border-radius: 10px;
   width: 282px;
   height: 350px;
+  position: relative;
 }
-.elements__img {
+.element__img {
   width: 282px;
-  height: 282px;
+  height: 284.56px;
   border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+  cursor: pointer;
 }
-.elements__title {
+.element__info {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+.element__title {
   font-family: Inter;
   font-size: 24px;
+  font-weight: bold;
   font-weight: 900;
   line-height: 29.05px;
   text-align: left;
   text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
-  margin-left: 20px;
+  white-space: nowrap;
+  margin: 0 0 0 0;
 }
-.elements__favorite {
-  max-width: 21px;
-  max-height: 19px;
+.element__photo-trash {
+  width: 18px;
+  height: 19.3px;
+  background-image: url("../images/img__delete.png");
+  border: none;
+  position: absolute;
+  padding: 0;
   cursor: pointer;
+  top: 10px;
+  right: 10px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent; /* Asegura que el fondo sea transparente */
+}
+.element__favorite {
+  width: 20px;
+  height: 19px;
+  cursor: pointer;
+  position: absolute;
+  background-size: contain;
+  bottom: 28px;
+  right: 15px;
+  background-image: url(../images/img__favorite.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+.element__favorite-active {
+  background-image: url(../images/img__favorite-active.png);
 }
 @media screen and (max-width: 768px) {
   .elements {

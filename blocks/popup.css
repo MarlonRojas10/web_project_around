@@ -57,6 +57,14 @@
 .form__button:hover {
   background: #000000cc;
 }
+.popup__content__close-button {
+  position: absolute;
+  top: -30px;
+  width: 30px;
+  height: 30px;
+  right: -40px;
+  cursor: pointer;
+}
 .popup__content {
   position: relative;
   max-width: 700px;

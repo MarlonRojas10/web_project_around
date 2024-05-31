@@ -57,7 +57,7 @@
 .form__button:hover {
   background: #000000cc;
 }
-.popup__content__close-button {
+.popup__close-button {
   position: absolute;
   top: -30px;
   width: 30px;

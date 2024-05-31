@@ -45,7 +45,7 @@ const initialCards = [
     link: "https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/WEB_sprint_5/ES/lago.jpg",
   },
 ];
-function cardGenerator(name, link) {
+function generatorCard(name, link) {
   const card = template.cloneNode(true).content.querySelector(".element");
   const cardImage = card.querySelector(".element__img");
   const cardTitle = card.querySelector(".element__title");
@@ -60,6 +60,7 @@ function cardGenerator(name, link) {
   cardImage.addEventListener("click", function () {
     titleImage.textContent = cardTitle.textContent;
     imageLink.src = cardImage.src;
+    imageLink.alt = cardTitle.textContent;
     popupImage.classList.add("popup_show");
   });
   cardImage.src = link;
@@ -68,7 +69,7 @@ function cardGenerator(name, link) {
   return card;
 }
 initialCards.forEach(function (element) {
-  const newCard = cardGenerator(element.name, element.link);
+  const newCard = generatorCard(element.name, element.link);
   cardArea.append(newCard);
 });
 profileButton.addEventListener("click", function (evt) {
@@ -102,7 +103,7 @@ formProfile.addEventListener("submit", function (event) {
 
 formCards.addEventListener("submit", function (event) {
   event.preventDefault();
-  const cardToAdd = cardGenerator(inputPlaceName.value, inputPlaceEnlace.value);
+  const cardToAdd = generatorCard(inputPlaceName.value, inputPlaceEnlace.value);
   cardArea.prepend(cardToAdd);
   popupPlace.classList.remove("popup_show");
 });

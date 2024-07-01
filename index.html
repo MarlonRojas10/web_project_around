@@ -53,20 +53,24 @@
             class="form__input"
             type="text"
             id="input-name"
+            value="Jacques Cousteau"
             required
             minlength="2"
             maxlength="40"
+            required
           />
-          <span class="input-error input-name-error"></span>
+          <span class="form__error input-name-error"></span>
           <input
             class="form__input"
             type="text"
             id="input-about"
+            value="explorador"
             required
             minlength="2"
             maxlength="200"
+            required
           />
-          <span class="input-error input-about-error"></span>
+          <span class="form__error input-about-error"></span>
           <button class="form__button" type="submit" id="profiel-form-button">
             Save
           </button>
@@ -87,21 +91,19 @@
             type="text"
             id="input-nameLugar"
             placeholder="Titulo"
-            required
             minlength="2"
-            maxlength="40"
+            maxlength="30"
+            required
           />
-          <span class="input-error input-name-error"></span>
+          <span class="form__error input-nameLugar-error"></span>
           <input
             class="form__input"
-            type="text"
+            type="url"
             id="input-enlace"
             placeholder="Enlace de la imagen"
             required
-            minlength="2"
-            maxlength="200"
           />
-          <span class="input-error input-about-error"></span>
+          <span class="form__error input-enlace-error"></span>
           <button class="form__button" type="submit" id="place-form-button">
             Save
           </button>
@@ -136,6 +138,7 @@
         <p class="footer__copyright">&copy; 2024,Marlon Rojas</p>
       </footer>
     </div>
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/index.js "></script>
+    <script src="./scripts/validation.js"></script>
   </body>
 </html>

@@ -89,6 +89,13 @@
 .form__error {
   color: red;
 }
+.form__button_disabled {
+}
+.form__button-inactive {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
 @media screen and (max-width: 768px) {
   .popup__content {
     width: 500px;

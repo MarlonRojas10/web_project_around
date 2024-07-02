@@ -74,15 +74,19 @@ initialCards.forEach(function (element) {
 });
 profileButton.addEventListener("click", function (evt) {
   popupProfile.classList.add("popup_show");
+  document.addEventListener("keydown", closePopupOnEsc);
 });
 function handleCloseProfile() {
   popupProfile.classList.remove("popup_show");
+  document.removeEventListener("keydown", closePopupOnEsc);
 }
 function handleClosePlace() {
   popupPlace.classList.remove("popup_show");
+  document.removeEventListener("keydown", closePopupOnEsc);
 }
 function handleCloseImage() {
   popupImage.classList.remove("popup_show");
+  document.removeEventListener("keydown", closePopupOnEsc);
 }
 function closePopupOnOverlayClick(evt) {
   if (evt.target.classList.contains("popup")) {
@@ -97,6 +101,7 @@ closeFormProfile.addEventListener("click", function () {
 });
 placeButton.addEventListener("click", function () {
   popupPlace.classList.add("popup_show");
+  document.addEventListener("keydown", closePopupOnEsc);
 });
 closeImage.addEventListener("click", function () {
   handleCloseImage();
@@ -126,4 +131,3 @@ function closePopupOnEsc(evt) {
     });
   }
 }
-document.addEventListener("keydown", closePopupOnEsc);
